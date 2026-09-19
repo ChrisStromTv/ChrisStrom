@@ -1,9 +1,8 @@
-# Chris Storm Kino — redesigned GitHub Pages site
+# Chris Storm Kino — Redesign v5
 
-## Visual update
-- The new 16:9 **Chris Storm poster** is now the main hero/background image.
-- The two behind-the-scenes/set photographs are shown as archival set images and are explicitly labeled **ON SET / 2022**.
-- Existing film archive, YouTube IDs, descriptions, contact details and navigation are retained.
+GitHub Pages-ready static site.
 
-## Deploy
-Upload the contents of this folder to the GitHub Pages repository. `index.html` is the entry point.
+## v5 mobile background fix
+The 8mm Chris Storm poster remains the full-page background. On portrait phones, the CSS uses `background-size: auto 100svh` so the complete poster height is visible instead of using `cover` and zooming/cropping the image. Landscape phones fit the poster by width.
+
+All existing film content, links, language switcher, and 2022 set images are retained.
