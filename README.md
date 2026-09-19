@@ -1,14 +1,9 @@
-# Chris Storm — Independent Cinema / GitHub Pages
+# Chris Storm Kino — redesigned GitHub Pages site
 
-Komplett überarbeitete Version der bestehenden Chris-Storm-Seite.
+## Visual update
+- The new 16:9 **Chris Storm poster** is now the main hero/background image.
+- The two behind-the-scenes/set photographs are shown as archival set images and are explicitly labeled **ON SET / 2022**.
+- Existing film archive, YouTube IDs, descriptions, contact details and navigation are retained.
 
-## Enthalten
-- neues Dark-Cinema-Design
-- die beiden neuen Schwarz-Weiß-Fotos integriert
-- bestehender About-/Kontakt-Inhalt erhalten
-- bestehendes Chris Storm Kino mit allen 5 Filmen und YouTube-Player erhalten
-- responsive Desktop-/Mobile-Ansicht
-- keine externe Datenbank / kein Backend
-
-## GitHub Pages
-Alle Dateien dieses Ordners in dein bestehendes Repository hochladen und die bisherigen Dateien ersetzen. Die beiden JPG-Dateien müssen im Repository neben `index.html` liegen.
+## Deploy
+Upload the contents of this folder to the GitHub Pages repository. `index.html` is the entry point.
