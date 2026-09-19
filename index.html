@@ -11,16 +11,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="site-bg" aria-hidden="true"></div>
+  <div class="site-bg-overlay" aria-hidden="true"></div>
   <div class="grain" aria-hidden="true"></div>
+
+  <div class="language-switcher" aria-label="Language selector">
+    <button type="button" class="lang-btn active" data-lang="de">DE</button>
+    <span>/</span>
+    <button type="button" class="lang-btn" data-lang="en">EN</button>
+  </div>
 
   <header class="nav">
     <a class="brand" href="#home" aria-label="Chris Storm Home">CHRIS<span>STORM</span></a>
     <nav>
-      <a href="#about">About</a>
-      <a href="#kino">Kino</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" data-i18n="nav.about">Über mich</a>
+      <a href="#kino" data-i18n="nav.kino">Kino</a>
+      <a href="#contact" data-i18n="nav.contact">Kontakt</a>
     </nav>
-    <a class="nav-kicker" href="#kino">PLAY <span>▶</span></a>
+    <a class="nav-kicker" href="#kino" data-i18n="nav.play">PLAY <span>▶</span></a>
   </header>
 
   <main id="home">
@@ -29,56 +37,56 @@
       <div class="hero-vignette"></div>
       <div class="hero-grid"></div>
       <div class="hero-content">
-        <p class="eyebrow"><span></span> INDEPENDENT CINEMA</p>
+        <p class="eyebrow"><span></span> <span data-i18n="hero.eyebrow">INDEPENDENT CINEMA</span></p>
         <h1>CHRIS<br><i>STORM</i></h1>
         <div class="hero-bottom">
-          <p>Independent films.<br>Real stories. Dark ideas.</p>
-          <a class="circle-play" href="#kino" aria-label="Enter Chris Storm Kino">↘</a>
+          <p data-i18n-html="hero.sub">Independent films.<br>Real stories. Dark ideas.</p>
+          <a class="circle-play" href="#kino" aria-label="Enter Chris Storm Kino" data-i18n-aria="hero.enter">↘</a>
         </div>
       </div>
       <div class="hero-index">01 / 03</div>
-      <div class="hero-caption">DIRECTOR · FILMMAKER · EDITOR</div>
+      <div class="hero-caption" data-i18n="hero.caption">DIRECTOR · FILMMAKER · EDITOR</div>
     </section>
 
     <section id="about" class="section about">
       <div class="about-copy">
-        <p class="eyebrow"><span></span> THE FILMMAKER</p>
-        <h2>Made<br><i>independent.</i></h2>
-        <p>Mein Name ist Kristijan Stojcevic, unter meinem Künstlernamen Chris Storm arbeite ich als Regisseur und Filmemacher.</p>
-        <p>Meine ersten eigenen Filme habe ich bereits im Alter von 16 Jahren gedreht. Gemeinsam mit meinen Cousins entstanden damals erste kleine Kurzfilme, unter anderem im Stil von Jackie-Chan-Filmen. Diese Projekte waren mein Einstieg in die praktische Filmproduktion.</p>
-        <p>Mit Anfang 20 begann ich, mich intensiver mit Filmproduktion, Filmsprache, Kameraarbeit, Schnitt und visueller Gestaltung auseinanderzusetzen. Viele meiner Projekte entstanden zunächst privat und dienten dazu, neue Techniken auszuprobieren, Fehler zu machen und daraus zu lernen.</p>
-        <p>Ich habe mir meine Kenntnisse und Fähigkeiten über die Jahre überwiegend selbstständig und autodidaktisch aufgebaut. Durch eigene Projekte, praktische Erfahrungen und die kontinuierliche Auseinandersetzung mit Filmproduktion habe ich mir Kenntnisse in unterschiedlichen Bereichen angeeignet.</p>
-        <p>Mein Anspruch ist es, eine Idee nicht nur zu entwickeln, sondern sie möglichst selbstständig von der ersten Idee bis zum fertigen Video umzusetzen.</p>
+        <p class="eyebrow"><span></span> <span data-i18n="about.eyebrow">THE FILMMAKER</span></p>
+        <h2 data-i18n-html="about.heading">Made<br><i>independent.</i></h2>
+        <p data-i18n="about.p1">Mein Name ist Kristijan Stojcevic, unter meinem Künstlernamen Chris Storm arbeite ich als Regisseur und Filmemacher.</p>
+        <p data-i18n="about.p2">Meine ersten eigenen Filme habe ich bereits im Alter von 16 Jahren gedreht. Gemeinsam mit meinen Cousins entstanden damals erste kleine Kurzfilme, unter anderem im Stil von Jackie-Chan-Filmen. Diese Projekte waren mein Einstieg in die praktische Filmproduktion.</p>
+        <p data-i18n="about.p3">Mit Anfang 20 begann ich, mich intensiver mit Filmproduktion, Filmsprache, Kameraarbeit, Schnitt und visueller Gestaltung auseinanderzusetzen. Viele meiner Projekte entstanden zunächst privat und dienten dazu, neue Techniken auszuprobieren, Fehler zu machen und daraus zu lernen.</p>
+        <p data-i18n="about.p4">Ich habe mir meine Kenntnisse und Fähigkeiten über die Jahre überwiegend selbstständig und autodidaktisch aufgebaut. Durch eigene Projekte, praktische Erfahrungen und die kontinuierliche Auseinandersetzung mit Filmproduktion habe ich mir Kenntnisse in unterschiedlichen Bereichen angeeignet.</p>
+        <p data-i18n="about.p5">Mein Anspruch ist es, eine Idee nicht nur zu entwickeln, sondern sie möglichst selbstständig von der ersten Idee bis zum fertigen Video umzusetzen.</p>
       </div>
       <div class="about-visual">
         <div class="photo-frame photo-frame-a">
           <img src="kino-hero.jpg" alt="Chris Storm im Kino bei einer Filmvorführung">
-          <span class="frame-label">ON SET / 2022</span>
+          <span class="frame-label" data-i18n="about.onset">ON SET / 2022</span>
         </div>
         <div class="photo-frame photo-frame-b">
           <img src="kino-making.jpg" alt="Chris Storm bei einer nächtlichen Filmproduktion">
-          <span class="frame-label">ON SET / 2022</span>
+          <span class="frame-label" data-i18n="about.onset">ON SET / 2022</span>
         </div>
-        <div class="vertical-note">SHOT · CUT · GRADE · REPEAT</div>
+        <div class="vertical-note" data-i18n="about.note">SHOT · CUT · GRADE · REPEAT</div>
       </div>
       <aside class="bio-card">
-        <div class="bio-line"><b>BERUF</b><span>Regisseur · Filmemacher · Video Editor · Videograf</span></div>
-        <div class="bio-line"><b>ARBEITSWEISE</b><span>Autodidaktisch · Independent Production</span></div>
-        <div class="bio-line"><b>BEREICHE</b><span>Drehbuch · Konzeption · Regie · Kamera · Schnitt · Color Grading · VFX · Postproduktion</span></div>
-        <div class="bio-line"><b>WEITERE ARBEITEN</b><span>Dokumentation · Commercial · Sport · Social Media</span></div>
-        <div class="bio-line"><b>INSTAGRAM</b><span>@kiko.kristijan_</span></div>
-        <div class="bio-line"><b>CONTACT</b><span>chrisstormfilms@gmail.com</span></div>
+        <div class="bio-line"><b data-i18n="bio.job">BERUF</b><span data-i18n="bio.jobText">Regisseur · Filmemacher · Video Editor · Videograf</span></div>
+        <div class="bio-line"><b data-i18n="bio.work">ARBEITSWEISE</b><span data-i18n="bio.workText">Autodidaktisch · Independent Production</span></div>
+        <div class="bio-line"><b data-i18n="bio.fields">BEREICHE</b><span data-i18n="bio.fieldsText">Drehbuch · Konzeption · Regie · Kamera · Schnitt · Color Grading · VFX · Postproduktion</span></div>
+        <div class="bio-line"><b data-i18n="bio.other">WEITERE ARBEITEN</b><span data-i18n="bio.otherText">Dokumentation · Commercial · Sport · Social Media</span></div>
+        <div class="bio-line"><b data-i18n="bio.instagram">INSTAGRAM</b><span>@kiko.kristijan_</span></div>
+        <div class="bio-line"><b data-i18n="bio.contact">KONTAKT</b><span>chrisstormfilms@gmail.com</span></div>
       </aside>
     </section>
 
     <section id="kino" class="section kino">
       <div class="kino-topline">
         <div class="eyebrow"><span></span> CHRIS STORM KINO</div>
-        <div class="archive-count">ARCHIVE / 005</div>
+        <div class="archive-count" data-i18n="kino.archive">ARCHIV / 005</div>
       </div>
       <div class="kino-heading">
-        <h2>The<br><i>Films.</i></h2>
-        <p>Short films, experiments and independent cinema — all in one place.</p>
+        <h2 data-i18n-html="kino.heading">The<br><i>Films.</i></h2>
+        <p data-i18n="kino.intro">Kurzfilme, Experimente und unabhängiges Kino — alles an einem Ort.</p>
       </div>
       <div class="rail" id="filmRail"></div>
     </section>
@@ -86,36 +94,36 @@
     <section class="section manifesto">
       <div class="manifesto-number">02</div>
       <div class="manifesto-copy">
-        <p class="eyebrow"><span></span> STATEMENT</p>
-        <div class="quote">“HORROR<br><i>LIVES HERE.</i>”</div>
-        <p>Short films, experiments and independent cinema — all in one place.</p>
+        <p class="eyebrow"><span></span> <span data-i18n="manifesto.eyebrow">STATEMENT</span></p>
+        <div class="quote" data-i18n-html="manifesto.quote">“HORROR<br><i>LIVES HERE.</i>”</div>
+        <p data-i18n="manifesto.text">Kurzfilme, Experimente und unabhängiges Kino — alles an einem Ort.</p>
       </div>
       <div class="manifesto-rule"></div>
     </section>
 
     <section id="contact" class="section contact">
       <div>
-        <p class="eyebrow"><span></span> CONTACT & BOOKING</p>
-        <h2>Let's make<br><i>something.</i></h2>
-        <p>For filmmaking, directing, creative projects, collaborations and booking:</p>
+        <p class="eyebrow"><span></span> <span data-i18n="contact.eyebrow">CONTACT & BOOKING</span></p>
+        <h2 data-i18n-html="contact.heading">Let's make<br><i>something.</i></h2>
+        <p data-i18n="contact.text">Für Filmproduktionen, Regie, kreative Projekte, Kooperationen und Buchungen:</p>
         <a class="email" href="mailto:chrisstormfilms@gmail.com">chrisstormfilms@gmail.com</a>
       </div>
       <div class="contact-actions">
-        <a class="button secondary" href="https://www.instagram.com/kiko.kristijan_/" target="_blank" rel="noopener">INSTAGRAM ↗</a>
-        <a class="button" href="mailto:chrisstormfilms@gmail.com?subject=Booking%20%2F%20Collaboration">BOOK CHRIS STORM <span>↗</span></a>
+        <a class="button secondary" href="https://www.instagram.com/kiko.kristijan_/" target="_blank" rel="noopener" data-i18n="contact.instagram">INSTAGRAM ↗</a>
+        <a class="button" href="mailto:chrisstormfilms@gmail.com?subject=Booking%20%2F%20Collaboration" data-i18n-html="contact.book">BOOK CHRIS STORM <span>↗</span></a>
       </div>
     </section>
   </main>
 
   <footer>
-    <span>© 2026 Chris Storm</span>
-    <span>Independent Cinema / Germany</span>
+    <span data-i18n="footer.copy">© 2026 Chris Storm</span>
+    <span data-i18n="footer.right">Independent Cinema / Germany</span>
   </footer>
 
   <div class="modal" id="playerModal" aria-hidden="true">
     <div class="modal-backdrop" data-close></div>
     <div class="player">
-      <button class="close" data-close aria-label="Close">×</button>
+      <button class="close" data-close aria-label="Close" data-i18n-aria="modal.close">×</button>
       <div class="video-wrap"><iframe id="playerFrame" src="" title="Chris Storm film player" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
       <div class="player-info">
         <p class="eyebrow" id="playerMeta"></p>
